@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #004FFF;
+}
+
+/* ---------------------------- Navbar ---------------------------- */
+
+.top-logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 25vmin;
+    /*border: 5px solid red;*/
+}
+
+.logo-top {
+    width: 15%;
+    margin-left: 2vmin;
+    /*border: 5px solid black;*/
+}
+
+/* ---------------------------- Main ---------------------------- */
+
+.box-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vmin;
+    /*border: 5px solid rgb(0, 0, 0);*/
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /*border: 5px solid green;*/
+}
+
+.title {
+    width: 95%;
+    /*border: 5px solid white;*/
+    color: white;
+    font-size: 13vmin;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+.subtitle {
+    width: 95%;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    font-size: 5vmin;
+    /*border: 5px solid white;*/
+    margin: 0;
+    font-weight: 300;
+}
+
+.box-entry {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15vmin;
+    /*border: 5px solid red;*/
+}
+
+.entry-btn {
+    border: 5px solid white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px 50px 20px 50px;
+    margin-left: 5vmin;
+    font-size: 3vmin;
+    color: white;
+    font-family: "Intter", sans-serif;
+    text-decoration: none;
+    font-weight: 900;
+    transition: 1s;
+}
+
+.entry-btn:hover {
+    background-color: white;
+    color: #004FFF;
+    margin-top: 5vmin;
+    box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.747);
+    /*border: 5px solid #0135a7;*/
+}
+
+/* ---------------------------- Footer ---------------------------- */
+
+.box-mark {
+    display: flex;
+    align-items: center;
+    /*border: 5px solid green;*/
+    width: 100%;
+    height: 20vmin;
+}
+
+.mark {
+    text-decoration: none;
+    color: white;
+    margin-left: 5vmin;
+    font-family: sans-serif;
+    font-size: 2vmin;
+    /*border: 5px solid white;*/
+}
+
+/* ---------------------------- @media ---------------------------- */
+
+@media (max-width : 600px) {
+    .top-logo {
+        justify-content: center;
+        margin: 0;
+    }
+
+    .logo-top {
+        width: 30%;
+    }
+
+    .box-main {
+        align-items: center;
+        justify-content: center;
+        height: 100vmin;
+    }
+
+    .main {
+        gap: 2vmin;
+    }
+
+    .title {
+        font-size: 7vmin;
+    }
+    .subtitle {
+        font-size: 3vmin;
+    }
+
+    .box-entry {
+        height: 10vmin;
+    }
+
+    .entry-btn {
+        margin-left: 2vmin;
+        padding: 10px 50px 10px 50px;
+    }
+
+    .box-mark {
+        justify-content: center;
+    }
+}
+
