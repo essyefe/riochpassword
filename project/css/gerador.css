@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------------- Navbar ---------------------------- */
+
+.top-logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 25vmin;
+    overflow: hidden;
+    /*border: 5px solid red;*/
+}
+
+.logo-top {
+    width: 15%;
+    margin-left: 2vmin;
+    object-fit: cover;
+    /*border: 5px solid black;*/
+}
+
+/* ---------------------------- Main ---------------------------- */
+
+.main {
+    width: 100%;
+    /*border: 5px solid red;*/
+    height: 50vmin;
+}
+
+.box-inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid blue;
+    padding: 10px;
+    width: 80%;
+    height: 90%;
+    gap: 10vmin;
+    margin-left: 5vmin;
+    border-radius: 5px;
+}
+
+.box-characters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    height: 90%;
+    /*border: 5px solid green;*/
+}
+
+.conteiner-characters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*border: 5px solid black;*/
+    height: 40%;
+    width: 100%;
+    gap: 1vmin;
+}
+
+.box-checkouts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*border: 5px solid black;*/
+    width: 20%;
+    height: 90%;
+    gap: 3vmin;
+}
+
+.box-check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*border: 5px solid black;*/
+    width: 100%;
+    gap: 3vmin;
+    transition: 0.5s;
+}
+
+.box-check:hover > .description-checkbox {
+    color: #004bbb;
+}
+
+.check:hover {
+    border-color: red;
+    border-radius: 100px;
+    transform: scale(3.5);
+}
+
+.check {
+    transform: scale(3);
+    transition: 1s;
+    height: 20%;
+}
+
+.description-checkbox {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+.description-input {
+    width: 100%;
+    margin: 0;
+    width: 100%;
+    /*border: 5px solid blue;*/
+    font-size: 3vmin;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+.box-input {
+    width: 100%;
+    height: 5vmin;
+}
+
+.input-number {
+    background-color: #0066FF;
+    width: 85%;
+    height: 7vmin;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: white;
+    font-size: 2vmin;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    padding-left: 30px;
+    transition: 0.5s;
+}
+
+.input-number:hover {
+    border-radius: 5px;
+}
+
+.input-number:focus {
+    border-radius: 5px;
+}
+
+.box-btn-create {
+    display: flex;
+    align-items: end;
+    width: 100%;
+    height: 10vmin;
+    /*border: 5px solid orangered;*/
+}
+
+.btn-generate {
+    color: #0066FF;
+    border: 2px solid #0066FF;
+    width: 50%;
+    height: 80%;
+    border-radius: 5px;
+    font-size: 3vmin;
+    transition: 0.5s;
+}
+
+.btn-generate:hover {
+    background-color: #0066FF;
+    color: white;
+    margin-left: 1vmin;
+}
+
+.input-number::placeholder {
+    color: white;
+}
+
+.input-number[type=number]::-webkit-inner-spin-button,
+.input-number[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.box-createpassword {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    width: 80%;
+    /*border: 5px solid orangered;*/
+    margin-left: 5vmin;
+    height: 12vmin;
+    gap: 2vmin;
+}
+
+.passwordcreate {
+    display: flex;
+    align-items: center;
+    font-size: 4vmin;
+    font-family: "Inter", sans-serif;
+    color: #0066FF;
+    padding: 10px;
+    background-color: rgb(240, 240, 240);
+    width: 30%;
+    height: 30%;
+    border-radius: 5px;
+}
+
+.btn-copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55%;
+    width: 5%;
+    background-color: #0066FF;
+    border: none;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.btn-copy:hover {
+    background-color: #004bbb;
+}
+
+.icon-copy {
+    width: 70%;
+}
+
+/* ---------------------------- Desativados ---------------------------- */
+
+.btn-sum {
+    display: none;
+}
+
+.btn-sub {
+    display: none;
+}
+
+.box-btn-create-mobile {
+    display: none;
+}
+
+.btn-generate-mobile {
+    display: none;
+}
+
+/* ---------------------------- Footer ---------------------------- */
+
+.mark-author {
+    display: flex;
+    align-items: end;
+    /*border: 5px solid black;*/
+    margin-left: 5vmin;
+    height: 7vmin;
+}
+
+.link-author {
+    font-family: "Inter", sans-serif;
+    font-size: 2vmin;
+    text-decoration: none;
+}
+
+/* ---------------------------- @@media ---------------------------- */
+
+@media (max-width : 600px ) {
+    .top-logo {
+        justify-content: center;
+    }
+
+    .logo-top {
+        width: 40%;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5vmin;
+    }
+
+    .box-inputs {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 0;
+        /*border: 5px solid red;*/
+        height: 100vmin;
+    }
+
+    .input-number {
+        border-radius: 0;
+        
+    }
+
+    .conteiner-characters {
+        gap: 3vmin;
+    }
+
+    .box-input {
+        display: flex;
+        flex-direction: row;
+        /*border: 5px solid lawngreen;*/
+        height: 9vmin;
+    }
+
+    .input-number {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 30%;
+        padding: 0;
+        height: 100%;
+    }
+
+    .btn-sum {
+        display: block;
+        text-align: center;
+        color: #0066FF;
+        background-color: white;
+        border: 1px solid #0066FF;
+        height: 100%;
+        padding: 10px;
+        width: 10%;
+    }
+
+    .btn-sub {
+        display: block;
+        text-align: center;
+        color: #0066FF;
+        background-color: white;
+        border: 1px solid #0066FF;
+        height: 100%;
+        padding: 10px;
+        width: 10%;
+    }
+
+    .box-btn-create {
+        display: none;
+    }
+
+    .btn-generate {
+        display: none;
+    }
+
+    .box-characters {
+        /*border: 5px solid green;*/
+        width: 95%;
+    }
+
+    .box-checkouts {
+        /*border: 5px solid red;*/
+        width: 95%;
+    }
+
+    .box-btn-create-mobile {
+        display: block;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 10vmin;
+        /*border: 5px solid red;*/
+    }
+
+    .btn-generate-mobile {
+        display: block;
+        background-color: white;
+        color: #0066FF;
+        border: 2px solid #004bbb;
+        border-radius: 10px 0px 10px 0px;
+        padding: 10px 50px 10px 50px;
+        font-size: 3vmin;
+    }
+
+    .box-createpassword {
+        /*border: 5px solid blue;*/
+        width: 95%;
+        margin-left: 0;
+    }
+
+    .passwordcreate {
+        height: 60%;
+        width: 60%;
+    }
+
+    .btn-copy {
+        height: 100%;
+        width: 13%;
+    }
+
+    .mark-author {
+        /*border: 5px solid blueviolet;*/
+        width: 95%;
+        margin-left: 0;
+    }
+
+}
