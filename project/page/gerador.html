@@ -1,58 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/gerador.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <div class="top-logo">
-        <img class="logo-top" src="../img/riochpassword-logo.png">
-    </div>
-    <div class="main">
-        <div class="box-inputs">
-            <div class="box-characters">
-                <div class="conteiner-characters">
-                    <p class="description-input">Quantidade de caracteres</p>
-                    <div class="box-input">
-                        <button class="btn-sum"> + </button>
-                        <input class="input-number" type="number" placeholder="0">
-                        <button class="btn-sub"> - </button>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/gerador.css">
+        <script src="../js/animation-btn.js"></script>
+        <script src="../js/random.js"></script>
+        <script src="../js/copy.js"></script>
+        <title>Document</title>
+    </head>
+    
+    <body>
+        <div class="top-logo">
+            <a class="link-index" href="../../index.html"><img class="logo-top" src="../img/riochpassword-logo.png">
+            </a>
+        </div>
+        <div class="main">
+            <div class="box-inputs">
+                <div class="box-characters">
+                    <div class="conteiner-characters">
+                        <p class="description-input">Quantidade de caracteres</p>
+                        <div class="box-input">
+                            <button class="btn-sum" onclick="colorirsoma(); sum()"> + </button>
+                            <input id="entrada" 6 class="input-number" type="number" placeholder="0">
+                            <button class="btn-sub" onclick="colorirsub(); sub()"> - </button>
+                        </div>
                     </div>
-                </div>
                 <div class="box-btn-create">
-                    <button class="btn-generate">Gerar</button>
+                    <button class="btn-generate" onclick="gerarsenha(); oncopyz(); opacity()">Gerar</button>
                 </div>
             </div>
             <div class="box-checkouts">
                 <div class="box-check">
-                    <input class="check" type="checkbox">
+                    <input class="check" type="checkbox" id="simbolos" onclick="simbolspassword()">
                     <p class="description-checkbox" class="description-checkbox">Símbolos especiais</p>
                 </div>
                 <div class="box-check">
-                    <input class="check" type="checkbox">
+                    <input class="check" type="checkbox" id="numeros" onclick="numberpassword()">
                     <p class="description-checkbox">Números</p>
                 </div>
                 <div class="box-check">
-                    <input class="check" type="checkbox">
+                    <input class="check" type="checkbox" id="maiusculas" onclick="maiusculaspassword()">
                     <p class="description-checkbox">Letras maísculas</p>
                 </div>
                 <div class="box-btn-create-mobile">
-                    <button class="btn-generate-mobile">Gerar</button>
+                    <button class="btn-generate-mobile" onclick="gerarsenha(); oncopyz(); opacity()">Gerar</button>
                 </div>
             </div>
         </div>
         <div class="box-createpassword">
-            <span class="passwordcreate">senhagerada</span>
-            <button class="btn-copy"><img class="icon-copy" src="../img/copy-icon.png"></button>
-        </div>
-        <div class="mark-author">
+            <span class="passwordcreate" id="resultado">|</span>
+            <button class="btn-copy"><img class="icon-copy" src="../img/copy-icon.png"
+                onclick="copy(); copysucess()"></button>
+            </div>
+            <div class="mark-author">
             <a class="link-author" href="">By Essyefe</a>
         </div>
     </div>
+    <script src="../js/sum.js"></script>
+    <script src="../js/sub.js"></script>
+    <script src="../js/span-copy.js"></script>
+    <script src="../js/animation-opacity.js"></script>
+    <script src="../js/oncopy.js"></script>
 </body>
 
 </html>
