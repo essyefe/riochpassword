@@ -1,68 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/gerador.css">
-        <script src="../js/animation-btn.js"></script>
-        <script src="../js/random.js"></script>
-        <script src="../js/copy.js"></script>
-        <title>Document</title>
-    </head>
-    
-    <body>
-        <div class="top-logo">
-            <a class="link-index" href="../../index.html"><img class="logo-top" src="../img/riochpassword-logo.png">
-            </a>
-        </div>
-        <div class="main">
-            <div class="box-inputs">
-                <div class="box-characters">
-                    <div class="conteiner-characters">
-                        <p class="description-input">Quantidade de caracteres</p>
-                        <div class="box-input">
-                            <button class="btn-sum" onclick="colorirsoma(); sum()"> + </button>
-                            <input id="entrada" 6 class="input-number" type="number" placeholder="0">
-                            <button class="btn-sub" onclick="colorirsub(); sub()"> - </button>
-                        </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/gerador.css">
+    <title>Gerador de Senhas | RIOCH</title>
+</head>
+
+<body>
+    <div class="box-logo">
+        <a class="link-index" href="../../index.html"><img class="above-logo" src="../img/riochpassword-logo.png">
+        </a>
+    </div>
+    <main class="main">
+        <div class="conteiner-characters">
+            <div class="box-characters">
+                <div class="crate-characters">
+                    <p class="description-input">Quantidade de caracteres</p>
+                    <div class="box-input">
+                        <button class="btn-sum" onclick="coloringSum(); sum()"> + </button>
+                        <input id="input" 6 class="input-number" type="number" placeholder="0" min="0" max="5000">
+                        <button class="btn-sub" onclick="coloringSub(); sub()"> - </button>
                     </div>
-                <div class="box-btn-create">
-                    <button class="btn-generate" onclick="gerarsenha(); oncopyz(); opacity()">Gerar</button>
+                </div>
+                <div class="box-btn-generate">
+                    <button class="btn-generate" onclick="generatePassword(); revealPassword(); dinamicsOpacity()">Gerar</button>
                 </div>
             </div>
-            <div class="box-checkouts">
+            <div class="conteiner-checks">
                 <div class="box-check">
                     <input class="check" type="checkbox" id="simbolos" onclick="simbolspassword()">
-                    <p class="description-checkbox" class="description-checkbox">Símbolos especiais</p>
+                    <p class="description-checkbox">Símbolos especiais</p>
                 </div>
                 <div class="box-check">
                     <input class="check" type="checkbox" id="numeros" onclick="numberpassword()">
                     <p class="description-checkbox">Números</p>
                 </div>
                 <div class="box-check">
-                    <input class="check" type="checkbox" id="maiusculas" onclick="maiusculaspassword()">
+                    <input class="check" type="checkbox" id="maiusculas" onclick="uppercasepassword()">
                     <p class="description-checkbox">Letras maísculas</p>
                 </div>
-                <div class="box-btn-create-mobile">
-                    <button class="btn-generate-mobile" onclick="gerarsenha(); oncopyz(); opacity()">Gerar</button>
-                </div>
+            </div>
+            <div class="box-btn-create-mobile">
+                <button class="btn-generate-mobile" onclick="generatePassword(); revealPassword(); dinamicsOpacity()">Gerar</button>
             </div>
         </div>
-        <div class="box-createpassword">
-            <span class="passwordcreate" id="resultado">|</span>
-            <button class="btn-copy"><img class="icon-copy" src="../img/copy-icon.png"
-                onclick="copy(); copysucess()"></button>
-            </div>
-            <div class="mark-author">
-            <a class="link-author" href="">By Essyefe</a>
+    </main>
+    <div class="box-createpassword">
+        <span class="createpassword" id="result">|</span>
+        <button class="btn-copy" onclick="copy(); sucessCopy()"><img class="icon-copy" src="../img/copy-icon.png"></button>
         </div>
+        <footer class="box-creator">
+            <a class="link-creator" href="">By Essyefe</a>
+        </footer>
     </div>
+    <script src="../animations/animationbtns.js"></script>
+    <script src="../animations/dinamicsopacity.js"></script>
+    <script src="../js/random.js"></script>
+    <script src="../js/copy.js"></script>
     <script src="../js/sum.js"></script>
     <script src="../js/sub.js"></script>
-    <script src="../js/span-copy.js"></script>
-    <script src="../js/animation-opacity.js"></script>
-    <script src="../js/oncopy.js"></script>
+    <script src="../js/sucesscopy.js"></script>
+    <script src="../js/revealpassword.js"></script>
 </body>
 
 </html>

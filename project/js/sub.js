@@ -1,12 +1,13 @@
+// Função para diminuir o input do usuario ( Mobile )
 function sub() {
-    const entrada = window.document.querySelector('#entrada');
-    let cont = parseInt(entrada.value) || 0;
-    if (entrada.value > 0) {
+    const input = window.document.querySelector('#input');
+    let cont = parseInt(input.value) || 0;
+    if (input.value > 0) {
         cont--;
-        entrada.value = cont;
+        input.value = cont;
         console.log(cont);
     }
     else {
-        console.log('limite minimo atingido')
+        console.log('limite minimo atingido');
     }
 }

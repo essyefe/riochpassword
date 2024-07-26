@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('animation-intro.css');
-
+@import url('../animations/fadeout.css');
 
 body {
     margin: 0;
@@ -9,29 +8,26 @@ body {
 
 /* ---------------------------- Navbar ---------------------------- */
 
-.top-logo {
+.box-logo {
     display: flex;
     align-items: center;
-    width: 100%;
-    height: 25vmin;
     overflow: hidden;
-    /*border: 5px solid grenn;*/
+    height: 25vmin;
+    width: 100%;
 }
 
 .link-index {
     display: flex;
     align-items: center;
+    overflow: hidden;
     height: 25vmin;
     width: 20%;
-    overflow: hidden;
-    /*border: 5px solid red;*/
 }
 
-.logo-top {
-    width: 70%;
-    margin-left: 2vmin;
+.above-logo {
     object-fit: cover;
-    /*border: 5px solid black;*/
+    margin-left: 2vmin;
+    width: 70%;
 }
 
 /* ---------------------------- Main ---------------------------- */
@@ -39,24 +35,22 @@ body {
 .main {
     display: flex;
     flex-direction: column;
+    height: auto;
     gap: 2vmin;
     width: 100%;
-    /*border: 5px solid red;*/
-    height: auto;
-    /*border: 5px solid red;*/
 }
 
-.box-inputs {
+.conteiner-characters {
     display: flex;
     flex-direction: row;
     align-items: center;
     border: 2px solid blue;
     padding: 10px;
-    width: 80%;
+    border-radius: 5px;
     height: 40vmin;
     gap: 10vmin;
     margin-left: 5vmin;
-    border-radius: 5px;
+    width: 80%;
 }
 
 .box-characters {
@@ -64,91 +58,83 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-left: 1vmin;
     width: 30%;
     height: 90%;
-    margin-left: 1vmin;
-    /*border: 5px solid green;*/
 }
 
-.conteiner-characters {
+.crate-characters {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*border: 5px solid black;*/
+    gap: 1vmin;
     height: 40%;
     width: 100%;
-    gap: 1vmin;
 }
 
-.box-checkouts {
+.conteiner-checks {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*border: 5px solid black;*/
+    gap: 3vmin;
     width: 20%;
     height: 90%;
-    gap: 3vmin;
 }
 
 .box-check {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /*border: 5px solid black;*/
-    width: 100%;
     gap: 3vmin;
-    transition: 0.5s;
+    width: 100%;
+    transition: 1s;
 }
 
-.box-check:hover > .description-checkbox {
-    color: #004bbb;
-}
-
-.check:hover {
-    /*border-color: red;*/
-    border-radius: 100px;
-    transform: scale(3.5);
+.box-check:hover {
+    color: #0066FF;
 }
 
 .check {
-    transform: scale(3);
+    transform: scale(5);
     transition: 1s;
-    height: 20%;
+}
+
+.check:hover {
+    transform: scale(6);
 }
 
 .description-checkbox {
     font-family: "Inter", sans-serif;
     font-weight: 500;
+    font-size: 2vmin;
 }
 
 .description-input {
-    width: 100%;
     margin: 0;
-    width: 100%;
-    /*border: 5px solid blue;*/
-    font-size: 3vmin;
     font-family: "Inter", sans-serif;
     font-weight: 600;
+    font-size: 3vmin;
+    width: 100%;
 }
 
 .box-input {
-    width: 100%;
     height: 5vmin;
+    width: 100%;
 }
 
 .input-number {
     background-color: #0066FF;
-    width: 85%;
-    height: 7vmin;
-    border-radius: 100px;
     outline: none;
     border: none;
     box-shadow: none;
     color: white;
-    font-size: 2vmin;
     font-family: "Inter", sans-serif;
     font-weight: 400;
+    border-radius: 100px;
     padding-left: 30px;
+    font-size: 2vmin;
+    height: 7vmin;
+    width: 85%;
     transition: 0.5s;
 }
 
@@ -160,26 +146,26 @@ body {
     border-radius: 5px;
 }
 
-.box-btn-create {
+.box-btn-generate {
     display: flex;
     align-items: end;
-    width: 100%;
     height: 10vmin;
-    /*border: 5px solid orangered;*/
+    width: 100%;
 }
 
 .btn-generate {
     color: #0066FF;
     border: 2px solid #0066FF;
-    width: 50%;
-    height: 80%;
     border-radius: 5px;
     font-size: 3vmin;
+    width: 50%;
+    height: 80%;
     transition: 0.5s;
 }
 
 .btn-generate:hover {
     background-color: #0066FF;
+    border-radius: 100px;
     color: white;
     margin-left: 1vmin;
 }
@@ -198,36 +184,34 @@ body {
     display: flex;
     flex-direction: row;
     align-items: end;
-    width: 80%;
-    /*border: 5px solid orangered;*/
-    margin-left: 5vmin;
-    padding-top: 20px;
-    gap: 2vmin;
     display: none;
-    /*border: 5px solid red;*/
+    margin-top: 7vmin;
+    margin-left: 5vmin;
+    gap: 2vmin;
+    width: 80%;
 }
 
-.passwordcreate {
+.createpassword {
     display: flex;
     align-items: center;
-    font-size: 4vmin;
     font-family: "Inter", sans-serif;
     color: #0066FF;
-    padding: 10px;
     background-color: rgb(240, 240, 240);
-    border-radius: 5px;
     word-break: break-all;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 4vmin;
 }
 
 .btn-copy {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 8vmin;
-    width: 8vmin;
     background-color: #0066FF;
     border: none;
     border-radius: 2px;
+    height: 6vmin;
+    width: 6vmin;
     transition: 0.5s;
 }
 
@@ -246,19 +230,7 @@ body {
     animation: fadeout 1.2s;
 }
 
-@keyframes fadeout {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-/* ---------------------------- Desativados ---------------------------- */
+/* ---------------------------- Desativados ( PC ) ---------------------------- */
 
 .btn-sum {
     display: none;
@@ -278,31 +250,31 @@ body {
 
 /* ---------------------------- Footer ---------------------------- */
 
-.mark-author {
+.box-creator {
     display: flex;
     align-items: end;
-    /*border: 5px solid black;*/
     margin-left: 5vmin;
     height: 7vmin;
+    padding-bottom: 5vmin;
 }
 
-.link-author {
+.link-creator {
     font-family: "Inter", sans-serif;
-    font-size: 2vmin;
     text-decoration: none;
+    font-size: 2vmin;
 }
 
 /* ---------------------------- @@media ---------------------------- */
 
-@media (max-width : 600px ) {
-    .top-logo {
+@media (max-width : 600px) {
+    .box-logo {
         justify-content: center;
     }
 
-    .logo-top {
+    .above-logo {
         width: 100%;
     }
-    
+
     .main {
         display: flex;
         flex-direction: column;
@@ -310,28 +282,32 @@ body {
         gap: 5vmin;
     }
 
-    .box-inputs {
+    .conteiner-characters {
         display: flex;
         flex-direction: column;
         width: 90%;
         margin-left: 0;
-        /*border: 5px solid red;*/
         height: 100vmin;
+        gap: 0;
+        justify-content: center;
+    }
+
+    .box-characters {
+        height: 30vmin;
     }
 
     .input-number {
         border-radius: 0;
-        
+
     }
 
-    .conteiner-characters {
+    .crate-characters {
         gap: 3vmin;
     }
 
     .box-input {
         display: flex;
         flex-direction: row;
-        /*border: 5px solid lawngreen;*/
         height: 9vmin;
     }
 
@@ -339,8 +315,8 @@ body {
         display: flex;
         align-items: center;
         text-align: center;
-        width: 30%;
         padding: 0;
+        width: 30%;
         height: 100%;
     }
 
@@ -350,9 +326,9 @@ body {
         color: #0066FF;
         background-color: white;
         border: 1px solid #0066FF;
-        height: 100%;
         padding: 10px;
         width: 10%;
+        height: 100%;
         transition: background-color 0.2s;
     }
 
@@ -362,13 +338,13 @@ body {
         color: #0066FF;
         background-color: white;
         border: 1px solid #0066FF;
-        height: 100%;
         padding: 10px;
         width: 10%;
+        height: 100%;
         transition: background-color 0.2s;
     }
 
-    .box-btn-create {
+    .box-btn-generate {
         display: none;
     }
 
@@ -377,55 +353,59 @@ body {
     }
 
     .box-characters {
-        /*border: 5px solid green;*/
         width: 95%;
     }
 
-    .box-checkouts {
-        /*border: 5px solid red;*/
+    .conteiner-checks {
         width: 95%;
+        height: 100%;
+    }
+
+    .check {
+        transform: scale(1.5);
+    }
+
+    .check:hover {
+        transform: scale(1.5);
     }
 
     .box-btn-create-mobile {
         display: block;
         display: flex;
         align-items: center;
-        width: 100%;
         height: 10vmin;
-        /*border: 5px solid red;*/
+        width: 100%;
     }
 
     .btn-generate-mobile {
         display: block;
         background-color: white;
         color: #0066FF;
-        border: 2px solid #004bbb;
         border-radius: 5px;
+        border: 2px solid #004bbb;
         padding: 10px 50px 10px 50px;
         font-size: 3vmin;
     }
 
     .box-createpassword {
-        /*border: 5px solid blue;*/
         width: 95%;
-        margin-left: 0;
+        margin-left: 2vmin;
     }
 
-    .passwordcreate {
+    .createpassword {
         height: 60%;
         width: 60%;
+        padding: 10px;
     }
 
     .btn-copy {
+        padding: 3px;
         height: 10vmin;
         width: 13%;
-        padding: 3px;
     }
 
-    .mark-author {
-        /*border: 5px solid blueviolet;*/
+    .box-creator {
         width: 95%;
-        margin-left: 0;
     }
 
 }

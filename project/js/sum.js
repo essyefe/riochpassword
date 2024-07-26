@@ -1,12 +1,13 @@
+// Função para aumentar o input do usuario ( Mobile )
 function sum() {
-    const entrada = window.document.querySelector('#entrada');
-    let cont = parseInt(entrada.value) || 0;
-    if (entrada.value <= 999) {
+    const input = window.document.querySelector('#input');
+    let cont = parseInt(input.value) || 0;
+    if (input.value <= 999) {
         cont++;
-        entrada.value = cont;
+        input.value = cont;
         console.log(cont);
     }
     else {
-        console.log('você está tentando colocar um número muito grande de caracteres para sua senha')
+        return;
     }
 }

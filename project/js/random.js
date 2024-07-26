@@ -6,37 +6,36 @@ function numberpassword() {
     return "0123456789";
 }
 
-function maiusculaspassword() {
+function uppercasepassword() {
     return "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 }
 
-function gerarsenha() {
+function generatePassword() {
 
-    console.log('clicado');
-    const entrada = window.document.querySelector('#entrada').value;
-    const resultado = window.document.querySelector('#resultado');
+    const input = window.document.querySelector('#input').value;
+    const result = window.document.querySelector('#result');
 
-    let caracteres = 'abcdefghijklmnopqrstuvwxyz';
+    let characters = 'abcdefghijklmnopqrstuvwxyz';
     if (window.document.querySelector('#simbolos').checked) {
-        caracteres += simbolspassword();
+        characters += simbolspassword();
     }
     if (window.document.querySelector('#numeros').checked) {
-        caracteres += numberpassword();
+        characters += numberpassword();
     }
     if (window.document.querySelector('#maiusculas').checked) {
-        caracteres += maiusculaspassword();
+        characters += uppercasepassword();
     }
 
-    let senha = "";
-    for (let i = 0; i < entrada; i++) {
-        senha += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+    let password = "";
+    for (let i = 0; i < input; i++) {
+        password += characters.charAt(Math.floor(Math.random() * characters.length));
     }
 
-    if (senha.length >= 5000) {
+    if (password.length >= 5000) {
         console.log('senha grande de mais para ser exibida');
     }
     else {
-        resultado.innerText = senha;
+        result.innerText = password;
     }
 
 }

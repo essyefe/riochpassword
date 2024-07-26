@@ -1,7 +1,8 @@
-function opacity() {
-    const resultado = window.document.querySelector('#resultado');
+// Animação de opacidade para o elemento resultado criado dinamicamente
+function dinamicsOpacity() {
+    const result = window.document.querySelector('#result');
     const opacity = new KeyframeEffect(
-        resultado,
+        result,
         [
             {opacity: 0},
             {opacity: 1}
