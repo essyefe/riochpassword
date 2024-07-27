@@ -72,6 +72,78 @@ body {
     width: 100%;
 }
 
+.description-input {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 3vmin;
+    width: 100%;
+}
+
+.box-input {
+    height: 5vmin;
+    width: 100%;
+}
+
+.input-number {
+    background-color: #0066FF;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    border-radius: 100px;
+    padding-left: 30px;
+    font-size: 2vmin;
+    height: 7vmin;
+    width: 85%;
+    transition: 0.5s;
+}
+
+.input-number::placeholder {
+    color: white;
+}
+
+
+.input-number:hover {
+    border-radius: 5px;
+}
+
+.input-number:focus {
+    border-radius: 5px;
+}
+
+.input-number[type=number]::-webkit-inner-spin-button,
+.input-number[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.box-btn-generate {
+    display: flex;
+    align-items: end;
+    height: 10vmin;
+    width: 100%;
+}
+
+.btn-generate {
+    color: #0066FF;
+    border: 2px solid #0066FF;
+    border-radius: 5px;
+    font-size: 3vmin;
+    width: 50%;
+    height: 80%;
+    transition: 0.5s;
+}
+
+.btn-generate:hover {
+    background-color: #0066FF;
+    border-radius: 100px;
+    color: white;
+    margin-left: 1vmin;
+}
+
 .conteiner-checks {
     display: flex;
     flex-direction: column;
@@ -107,77 +179,6 @@ body {
     font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 2vmin;
-}
-
-.description-input {
-    margin: 0;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    font-size: 3vmin;
-    width: 100%;
-}
-
-.box-input {
-    height: 5vmin;
-    width: 100%;
-}
-
-.input-number {
-    background-color: #0066FF;
-    outline: none;
-    border: none;
-    box-shadow: none;
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    border-radius: 100px;
-    padding-left: 30px;
-    font-size: 2vmin;
-    height: 7vmin;
-    width: 85%;
-    transition: 0.5s;
-}
-
-.input-number:hover {
-    border-radius: 5px;
-}
-
-.input-number:focus {
-    border-radius: 5px;
-}
-
-.box-btn-generate {
-    display: flex;
-    align-items: end;
-    height: 10vmin;
-    width: 100%;
-}
-
-.btn-generate {
-    color: #0066FF;
-    border: 2px solid #0066FF;
-    border-radius: 5px;
-    font-size: 3vmin;
-    width: 50%;
-    height: 80%;
-    transition: 0.5s;
-}
-
-.btn-generate:hover {
-    background-color: #0066FF;
-    border-radius: 100px;
-    color: white;
-    margin-left: 1vmin;
-}
-
-.input-number::placeholder {
-    color: white;
-}
-
-.input-number[type=number]::-webkit-inner-spin-button,
-.input-number[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
 }
 
 .box-createpassword {
@@ -293,12 +294,8 @@ body {
     }
 
     .box-characters {
+        width: 95%;
         height: 30vmin;
-    }
-
-    .input-number {
-        border-radius: 0;
-
     }
 
     .crate-characters {
@@ -311,15 +308,6 @@ body {
         height: 9vmin;
     }
 
-    .input-number {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        padding: 0;
-        width: 30%;
-        height: 100%;
-    }
-
     .btn-sum {
         display: block;
         text-align: center;
@@ -330,6 +318,16 @@ body {
         width: 10%;
         height: 100%;
         transition: background-color 0.2s;
+    }
+
+    .input-number {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        width: 30%;
+        height: 100%;
+        border-radius: 0;
     }
 
     .btn-sub {
@@ -352,10 +350,6 @@ body {
         display: none;
     }
 
-    .box-characters {
-        width: 95%;
-    }
-
     .conteiner-checks {
         width: 95%;
         height: 100%;
@@ -369,7 +363,7 @@ body {
         transform: scale(1.5);
     }
 
-    .box-btn-create-mobile {
+    .box-btn-generate-mobile {
         display: block;
         display: flex;
         align-items: center;

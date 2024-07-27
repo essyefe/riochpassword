@@ -9,7 +9,7 @@ body {
 
 /* ---------------------------- Navbar ---------------------------- */
 
-.top-logo {
+.box-logo {
     display: flex;
     align-items: center;
     width: 100%;
@@ -17,7 +17,7 @@ body {
     /*border: 5px solid red;*/
 }
 
-.logo-top {
+.above-logo {
     width: 15%;
     margin-left: 2vmin;
     /*border: 5px solid black;*/
@@ -95,7 +95,7 @@ body {
 
 /* ---------------------------- Footer ---------------------------- */
 
-.box-mark {
+.box-creator {
     display: flex;
     align-items: center;
     /*border: 5px solid green;*/
@@ -103,7 +103,7 @@ body {
     height: 20vmin;
 }
 
-.mark {
+.link-creator {
     text-decoration: none;
     color: white;
     margin-left: 5vmin;
